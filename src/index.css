@@ -2,15 +2,7 @@
 
 @import "tailwindcss";
 
-@custom-variant dark {
-
-  .dark & {
-
-    @slot;
-
-  }
-
-}
+@custom-variant dark (&:where(.dark, .dark *)); 
 
 
 *{
